@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css"
+  href="chrome://giferator/skin/browserOverlay.css" ?>
+
+<!DOCTYPE overlay SYSTEM
+  "chrome://giferator/locale/browserOverlay.dtd">
+
+<overlay id="giferator-browser-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript"
+    src="chrome://giferator/content/browserOverlay.js" />
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="giferator-string-bundle"
+      src="chrome://giferator/locale/browserOverlay.properties" />
+  </stringbundleset>
+
+  <!-- These keys map to the javascript functions. -->
+  <keyset>
+      <key id="giferator-makegif-key" key="g"
+          oncommand="GiferatorChrome.BrowserOverlay.makeGif(event);"
+          />
+      <key id="giferator-savegif-key" key="w"
+          oncommand="GiferatorChrome.BrowserOverlay.saveFile(event);"
+          />
+  </keyset>
+
+</overlay>

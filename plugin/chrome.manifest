@@ -1,0 +1,6 @@
+content   giferator                content/
+skin      giferator  classic/1.0   skin/
+locale    giferator  en-US         locale/en-US/
+
+overlay chrome://browser/content/browser.xul  chrome://giferator/content/browserOverlay.xul
+style chrome://global/content/customizeToolbar.xul chrome://giferator/skin/browserOverlay.css
